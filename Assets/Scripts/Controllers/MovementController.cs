@@ -7,9 +7,6 @@ public class MovementController : MonoBehaviour
     [Header("Movement")]
     [SerializeField][Range(0.01f, 0.2f)] float movementSpeed;
     [SerializeField][Range(0.01f, 0.2f)] float sprintSpeed;
-
-    [Header("Rotation")]
-    [SerializeField][Range(0f, 3f)] float rotationSpeed;
     
     private CharacterController m_characterController;
 
@@ -20,6 +17,9 @@ public class MovementController : MonoBehaviour
 
     private Vector2 m_moveInput = Vector2.zero;
     private bool m_sprintInput = false;
+    private Vector3 m_moveDirection = Vector3.zero;
+
+    public Vector3 MoveDirection { get => m_moveDirection; }
 
     void Start()
     {
@@ -36,42 +36,31 @@ public class MovementController : MonoBehaviour
         // Reading input values
         m_moveInput = m_moveAction.ReadValue<Vector2>();
         m_sprintInput = m_sprintAction.IsPressed();
-
-        Debug.Log(m_sprintInput);
     }
 
     private void FixedUpdate()
     {
         // Casting the input
-        Vector3 movement = new Vector3(m_moveInput.x, 0f, m_moveInput.y);
+        Vector3 _movement = new Vector3(m_moveInput.x, 0f, m_moveInput.y);
 
         // Transforming movement direction to align with the camera's orientation
-        Vector3 cameraForward = m_camera.transform.forward; // Forward direction of the camera
-        Vector3 cameraRight = m_camera.transform.right;     // Right direction of the camera
+        Vector3 _cameraForward = m_camera.transform.forward; // Forward direction of the camera
+        Vector3 _cameraRight = m_camera.transform.right;     // Right direction of the camera
 
         // Remove any vertical component to keep movement on the horizontal plane
-        cameraForward.y = 0f;
-        cameraRight.y = 0f;
+        _cameraForward.y = 0f;
+        _cameraRight.y = 0f;
 
         // Normalize the directions
-        cameraForward.Normalize();
-        cameraRight.Normalize();
+        _cameraForward.Normalize();
+        _cameraRight.Normalize();
 
         // Transform the input direction relative to the camera
-        Vector3 moveDirection = cameraForward * movement.z + cameraRight * movement.x;
+        m_moveDirection = _cameraForward * _movement.z + _cameraRight * _movement.x;
 
-        // Applying sprint
-        moveDirection *= m_sprintInput ? sprintSpeed : movementSpeed;
+        float _movementSpeed = m_sprintInput ? sprintSpeed : movementSpeed;
 
         // Moving Character
-        m_characterController.Move(moveDirection);
-
-        // Rotate character to movement direction
-        if (moveDirection.normalized.magnitude > 0.1f)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-        }
-          
+        m_characterController.Move(m_moveDirection * _movementSpeed);  
     }
 }
