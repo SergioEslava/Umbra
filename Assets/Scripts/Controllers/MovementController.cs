@@ -4,8 +4,12 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class MovementController : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField][Range(0.01f, 0.2f)] float movementSpeed;
     [SerializeField][Range(0.01f, 0.2f)] float sprintSpeed;
+
+    [Header("Rotation")]
+    [SerializeField][Range(0f, 3f)] float rotationSpeed;
     
     private CharacterController m_characterController;
 
@@ -39,7 +43,7 @@ public class MovementController : MonoBehaviour
     private void FixedUpdate()
     {
         // Casting the input
-        Vector3 _movement = new Vector3(m_moveInput.x, 0f, m_moveInput.y);
+        Vector3 movement = new Vector3(m_moveInput.x, 0f, m_moveInput.y);
 
         // Transforming movement direction to align with the camera's orientation
         Vector3 cameraForward = m_camera.transform.forward; // Forward direction of the camera
@@ -54,12 +58,20 @@ public class MovementController : MonoBehaviour
         cameraRight.Normalize();
 
         // Transform the input direction relative to the camera
-        Vector3 moveDirection = cameraForward * _movement.z + cameraRight * _movement.x;
+        Vector3 moveDirection = cameraForward * movement.z + cameraRight * movement.x;
 
         // Applying sprint
         moveDirection *= m_sprintInput ? sprintSpeed : movementSpeed;
 
         // Moving Character
         m_characterController.Move(moveDirection);
+
+        // Rotate character to movement direction
+        if (moveDirection.normalized.magnitude > 0.1f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+          
     }
 }
