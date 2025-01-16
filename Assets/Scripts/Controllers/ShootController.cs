@@ -12,9 +12,11 @@ public class ShootController : MonoBehaviour
     private Camera m_camera;
     private bool m_isAiming;
     private Vector3 m_targetPoint;
+    private Vector3 m_targetDirection;
 
     public bool IsAiming { get => m_isAiming; }
     public Vector3 TargetPoint { get => m_targetPoint; }
+    public Vector3 TargetDirection { get => m_targetDirection; }
 
     private void Start()
     {
@@ -43,6 +45,8 @@ public class ShootController : MonoBehaviour
         {
            
             m_targetPoint = _hit.point;
+
+            m_targetDirection = (_hit.point - transform.position).normalized;
 
             // Draw a plane around the target point
             DrawDebugPlane(m_targetPoint, _hit.normal, 0.2f);

@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -14,11 +15,13 @@ public class CharacterRotationController : MonoBehaviour
 
     Quaternion m_targetRotation = Quaternion.identity;
     Vector3 m_rotationDirection = Vector3.zero;
+    CinemachineInputAxisController m_inputAxisController;
 
     private void Start()
     {
         m_movementController = GetComponent<MovementController>();
         m_shootController = GetComponent<ShootController>();
+        m_inputAxisController = FindAnyObjectByType<CinemachineInputAxisController>();
     }
 
 
@@ -27,13 +30,19 @@ public class CharacterRotationController : MonoBehaviour
 
         // We aplly rotation just if the player is aiming or if is moving with a threshold of 0.1f
         if (m_shootController.IsAiming)
-            m_rotationDirection = m_shootController.TargetPoint;
+        {
+            m_rotationDirection = m_shootController.TargetDirection;
+            if (m_inputAxisController != null) m_inputAxisController.enabled = false;
+        }
         else if (m_movementController.MoveDirection.magnitude > 0.1f)
         {
             m_rotationDirection = m_movementController.MoveDirection;
         }
         else
+        {
+            if (m_inputAxisController != null) m_inputAxisController.enabled = true;
             return;
+        }
 
         m_targetRotation = Quaternion.LookRotation(m_rotationDirection);
 
