@@ -7,42 +7,42 @@ using UnityEngine.AI;
 [System.Serializable]
 public class MoveToRandom : ActionNode
 {
+    [Tooltip("Range of distance for the random position")] public float randomRange = 5f;
+
+
     protected override void OnStart() {
 
-        context.agent.destination = GetRandomPointOnNavMesh(context.transform.position, 5f);
-        Debug.Log("START");
+        context.agent.destination = GetRandomPointOnNavMesh(context.transform.position, randomRange);
     }
 
     protected override void OnStop() {
-        Debug.Log("STOP");
+
     }
 
     protected override State OnUpdate() {
         if (Vector3.Distance(context.transform.position, context.agent.destination) < 1.1f)
         {
-            Debug.Log("UPDATE: Success");
             return State.Success;
         }
         else
         {
-            Debug.Log("UPDATE: Running");
             return State.Running;
         }
     }
 
-    public Vector3 GetRandomPointOnNavMesh(Vector3 center, float range)
+    public Vector3 GetRandomPointOnNavMesh(Vector3 _center, float _range)
     {
-        Vector3 randomPoint = center + Random.insideUnitSphere * range;
-        randomPoint.y = 0;
-        NavMeshHit hit;
+        Vector3 _randomPoint = _center + Random.insideUnitSphere * _range;
+        _randomPoint.y = 0;
+        NavMeshHit _hit;
 
         // Navmesh point projection
-        if (NavMesh.SamplePosition(randomPoint, out hit, range, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(_randomPoint, out _hit, _range, NavMesh.AllAreas))
         {
-            return hit.position;
+            return _hit.position;
         }
 
         // if a valid position wasn't find, return to the center
-        return center;
+        return _center;
     }
 }
