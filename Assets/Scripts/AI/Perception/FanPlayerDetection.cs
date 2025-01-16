@@ -50,7 +50,6 @@ public class FanPlayerDetection : MonoBehaviour
         }
 
         behaviourTreeInstance.SetBlackboardValue<GameObject>("player", null);
-        Debug.Log("CharacterController not detected.");
     }
 
     private void OnDrawGizmos()

@@ -20,7 +20,8 @@ MonoBehaviour:
   - rid: 7975271657448931552
   - rid: 7975271657448931555
   blackboard:
-    keys: []
+    keys:
+    - rid: 7975271678902796356
   viewPosition: {x: 269, y: 201, z: 0}
   viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
   references:
@@ -77,3 +78,11 @@ MonoBehaviour:
           keys: []
         description: 
         drawGizmos: 0
+        randomRange: 5
+    - rid: 7975271678902796356
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: player
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
