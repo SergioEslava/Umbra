@@ -26,8 +26,6 @@ public class InteractionController : MonoBehaviour
     {
         DetectInteractableObjects();
         if (m_interactAction.WasPerformedThisFrame()) Interact();
-
-        Debug.Log(m_interactable);
     }
 
     private void DetectInteractableObjects()
