@@ -1,4 +1,3 @@
-using UnityEditor.Recorder.Input;
 using UnityEngine;
 
 public class Player : MonoBehaviour
