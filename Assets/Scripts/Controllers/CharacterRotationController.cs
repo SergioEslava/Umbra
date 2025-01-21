@@ -27,12 +27,13 @@ public class CharacterRotationController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (m_inputAxisController != null)
+            m_inputAxisController.enabled = !m_shootController.IsAiming;
 
         // We aplly rotation just if the player is aiming or if is moving with a threshold of 0.1f
         if (m_shootController.IsAiming)
         {
             m_rotationDirection = m_shootController.TargetDirection;
-            if (m_inputAxisController != null) m_inputAxisController.enabled = false;
         }
         else if (m_movementController.MoveDirection.magnitude > 0.1f)
         {
@@ -40,7 +41,6 @@ public class CharacterRotationController : MonoBehaviour
         }
         else
         {
-            if (m_inputAxisController != null) m_inputAxisController.enabled = true;
             return;
         }
 

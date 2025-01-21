@@ -1,21 +1,31 @@
+using Mono.Cecil;
+using NUnit.Framework.Internal.Commands;
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ShootController : MonoBehaviour
 {
+    [Header("Weapon Data")]
+    [SerializeField] WeaponData weaponData;
+
+    [Header("Aiming Settings")]
+    [SerializeField] GameObject bulletHole;
     [SerializeField] Transform aimPoint;
+    [SerializeField] LayerMask collisionMask;
 
     InputAction m_aimAction;
     InputAction m_attackAction;
 
     private Camera m_camera;
     private bool m_isAiming;
+    private bool m_isFiring;
     private Vector3 m_targetPoint;
     private Vector3 m_targetDirection;
+    private float m_shootTimer = 0f;
 
     public bool IsAiming { get => m_isAiming; }
-    public Vector3 TargetPoint { get => m_targetPoint; }
     public Vector3 TargetDirection { get => m_targetDirection; }
 
     private void Start()
@@ -29,11 +39,43 @@ public class ShootController : MonoBehaviour
     private void Update()
     {
         m_isAiming = m_aimAction.IsPressed();
+        m_isFiring = (m_isAiming) ? m_attackAction.IsPressed() : false;
     }
 
     private void FixedUpdate()
     {
         if (m_isAiming) aim();
+
+        // Timer for the weapon fire rate
+        m_shootTimer += Time.deltaTime;
+        if (m_shootTimer < weaponData.fireRate)
+            return;
+
+        if (m_isFiring) fire(); 
+    }
+
+    private void fire()
+    {
+        // Reseting the shoot timer
+        m_shootTimer = 0f;
+
+        if (!weaponData)
+        {
+            Debug.LogError("No weapon data added to ShootController.");
+            return;
+        }
+
+        Collider[] _objectsInSphere = Physics.OverlapSphere(m_targetPoint, weaponData.impactRadius, collisionMask);
+        foreach (Collider _col in _objectsInSphere)
+        {
+            // Verify if object can be damageable
+            IDamageable _damageable = _col.GetComponent<IDamageable>();
+            if (_damageable != null)
+                _damageable.TakeDamage(weaponData.damage); // Apply damage
+
+        }
+
+        Debug.Log("FIRING");
     }
 
     private void aim()
@@ -80,4 +122,8 @@ public class ShootController : MonoBehaviour
         Debug.DrawLine(_bottomRight, _bottomLeft, Color.red, Time.deltaTime);
         Debug.DrawLine(_bottomLeft, _topLeft, Color.red, Time.deltaTime);
     }
+}
+public interface IDamageable
+{
+    void TakeDamage(float _damage);
 }
