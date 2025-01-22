@@ -6008,6 +6008,250 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[-2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[0].key
+      value: 7975271815042826325
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[1].key
+      value: 7975271815042826310
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[2].key
+      value: 7975271815042826310
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[3].key
+      value: 7975271815042826310
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[4].key
+      value: 7975271815042826310
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826306]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826307]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826308]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826309]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826310]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826311]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826313]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826314]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826317]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826318]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826320]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826321]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826325]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826326]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[0].value
+      value: 7975271815042826326
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[1].value
+      value: 7975271815042826311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[2].value
+      value: 7975271815042826311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[3].value
+      value: 7975271815042826311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[4].value
+      value: 7975271815042826311
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826306].name
+      value: patrolPath
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826307].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826308].name
+      value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826309].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826310].name
+      value: patrolPath
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826311].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826313].name
+      value: path
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826314].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826317].name
+      value: fdgd
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826318].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826320].name
+      value: patrolPath
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826321].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826325].name
+      value: path
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826326].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826308].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826309].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826320].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826321].value
+      value: 
+      objectReference: {fileID: 863404383}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826325].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826326].value
+      value: 
+      objectReference: {fileID: 863404385}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826306].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826307].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826308].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826309].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826310].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826311].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826313].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826314].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826317].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826318].typeName
+      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826320].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826321].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826325].typeName
+      value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826326].typeName
+      value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
     - target: {fileID: 6514140344779589106, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
       propertyPath: m_Name
       value: Normal Zombie (1)
@@ -12332,6 +12576,88 @@ PrefabInstance:
     - target: {fileID: 1623845400154422399, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[-2]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[0].key
+      value: 7975271815042826327
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826322]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826323]'
+      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826327]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: 'managedReferences[7975271815042826328]'
+      value: Assembly-CSharp PatrolPathKey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: blackboardOverrides.Array.data[0].value
+      value: 7975271815042826328
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826322].name
+      value: patrolPath
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826323].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826327].name
+      value: path
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826328].name
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826322].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826323].value
+      value: 
+      objectReference: {fileID: 1750605984}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826327].value
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826328].value
+      value: 
+      objectReference: {fileID: 1750605986}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826322].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826323].typeName
+      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826327].typeName
+      value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
+      propertyPath: managedReferences[7975271815042826328].typeName
+      value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 6514140344779589106, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
       propertyPath: m_Name

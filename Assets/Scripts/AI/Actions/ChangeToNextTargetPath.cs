@@ -23,7 +23,7 @@ public class ChangeToNextTargetPath : ActionNode
     {
         if(m_targetPathIndex == null)
         {
-            Debug.LogError("targetPathIndex blackboard variable not found.");
+            Debug.LogWarning("targetPathIndex blackboard variable not found.");
             return State.Failure;
         }
 
