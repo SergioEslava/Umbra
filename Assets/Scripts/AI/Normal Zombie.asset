@@ -25,13 +25,17 @@ MonoBehaviour:
   - rid: 7975271815042826337
   - rid: 7975271815042826338
   - rid: 7975271815042826339
+  - rid: 7975271839587631168
+  - rid: 7975271839587631169
+  - rid: 7975271839587631171
+  - rid: 7975271839587631172
   blackboard:
     keys:
     - rid: 7975271815042826324
     - rid: 7975271815042826335
     - rid: 7975271815042826340
-  viewPosition: {x: 478, y: 197, z: 0}
-  viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
+  viewPosition: {x: 535, y: 214, z: 0}
+  viewScale: {x: 0.32690176, y: 0.32690176, z: 1}
   references:
     version: 2
     RefIds:
@@ -48,13 +52,13 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         child:
-          rid: 7975271815042826331
+          rid: 7975271839587631168
     - rid: 7975271657448931543
       type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
       data:
         started: 0
         guid: 2514028422ab1a34da37fa8faf4f9ae0
-        position: {x: 255, y: 450}
+        position: {x: 270, y: 900}
         blackboard:
           keys: []
         description: 
@@ -67,7 +71,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: d40184525353fc14ea81dbaffe7cb8ea
-        position: {x: 390, y: 675}
+        position: {x: 405, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -81,7 +85,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: fce5827173001824badc632248c766da
-        position: {x: 135, y: 675}
+        position: {x: 150, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -99,7 +103,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 0e3b570ced8615246bec660200e12556
-        position: {x: -75, y: 225}
+        position: {x: -60, y: 675}
         blackboard:
           keys: []
         description: 
@@ -113,7 +117,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 22d13f97ce1e3044aad1d9349caa20fa
-        position: {x: -75, y: 450}
+        position: {x: -60, y: 900}
         blackboard:
           keys: []
         description: 
@@ -133,7 +137,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 36230e3b74a44db4ea1eb53dbc10be33
-        position: {x: -435, y: 450}
+        position: {x: -420, y: 900}
         blackboard:
           keys: []
         description: 
@@ -147,7 +151,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: f252f359a2c6158478b00a7ee71898e3
-        position: {x: -735, y: 675}
+        position: {x: -720, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -157,7 +161,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 3fedd45b63c6e5c409f385ab07c56280
-        position: {x: -510, y: 675}
+        position: {x: -495, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -167,7 +171,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: a90a7f579a2e07b449c3308b5963ce9c
-        position: {x: -270, y: 675}
+        position: {x: -255, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -183,3 +187,52 @@ MonoBehaviour:
         typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
         value: {fileID: 0}
+    - rid: 7975271839587631168
+      type: {class: Selector, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 19a556d5e93b55f45b5e5ce80e23b473
+        position: {x: -60, y: 225}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 7975271839587631169
+        - rid: 7975271815042826331
+    - rid: 7975271839587631169
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 88e3b9fadbdd6d042ba5e71c76666fa2
+        position: {x: -885, y: 450}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 7975271839587631171
+        - rid: 7975271839587631172
+    - rid: 7975271839587631171
+      type: {class: PlayerDetected, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 0850f4851061fa1488a13c5347662d46
+        position: {x: -1215, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        invert: 0
+    - rid: 7975271839587631172
+      type: {class: MoveToPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 51bb9f10b251c854ba3d761e412a4354
+        position: {x: -960, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        persecutionRange: 10
+        reachingRange: 1.1
