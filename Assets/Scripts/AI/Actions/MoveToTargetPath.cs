@@ -26,13 +26,17 @@ public class MoveToTargetPath : ActionNode
     {
         if (m_targetPath == null)
         {
-            Debug.LogWarning("targetPath blackboard variable not found.");
+            Debug.LogWarning("MoveToTargePath: targetPath blackboard variable not found.");
+            return State.Failure;
+        }else if (m_targetPath.value == null)
+        {
+            Debug.LogWarning("MoveToTargePath: targetPath has null value");
             return State.Failure;
         }
 
         if (m_targetPathIndex == null)
         {
-            Debug.LogWarning("targetPathIndex blackboard variable not found.");
+            Debug.LogWarning("MoveToTargePath blackboard variable not found.");
             return State.Failure;
         }
 

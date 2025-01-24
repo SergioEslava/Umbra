@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
 
+[System.Serializable]
 public class PatrolPath : MonoBehaviour
 {
     [SerializeField] Color pathColor = Color.green;
