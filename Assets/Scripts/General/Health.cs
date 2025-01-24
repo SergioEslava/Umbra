@@ -13,8 +13,13 @@ public class Health : MonoBehaviour, IDamageable
         healthPoint -= _damage;
 
         OnDamage?.Invoke(healthPoint);
+        Debug.Log($"HEALTH: {gameObject.name} takes {_damage} damage. Remaining health points: {healthPoint}");
 
         if (healthPoint < 0)
+        {
             OnDie?.Invoke();
+            Debug.Log($"HEALTH: {gameObject.name} dies.");
+        }
+
     }
 }

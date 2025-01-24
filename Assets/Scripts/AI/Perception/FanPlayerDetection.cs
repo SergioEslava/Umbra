@@ -48,11 +48,9 @@ public class FanPlayerDetection : MonoBehaviour
                 }
             }
         }
-
-        behaviourTreeInstance.SetBlackboardValue<GameObject>("player", null);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (showDebugFan)
         {

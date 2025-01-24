@@ -48,10 +48,9 @@ public class SpherePlayerDetection : MonoBehaviour
                 return;
             }
         }
-        m_behaviourTreeInstance.SetBlackboardValue<GameObject>("player", null);
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (showDebugSphere)
         {

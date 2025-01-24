@@ -56,7 +56,7 @@ public class InteractionController : MonoBehaviour
         if (m_interactable != null) m_interactable.Interact();
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (showDebugInteractionArea)
         {

@@ -29,13 +29,18 @@ MonoBehaviour:
   - rid: 7975271839587631169
   - rid: 7975271839587631171
   - rid: 7975271839587631172
+  - rid: 7975271861161820160
+  - rid: 7975271861161820161
+  - rid: 7975271861161820226
+  - rid: 7975271861161820227
+  - rid: 7975271861161820228
   blackboard:
     keys:
     - rid: 7975271815042826324
     - rid: 7975271815042826335
     - rid: 7975271815042826340
-  viewPosition: {x: 535, y: 214, z: 0}
-  viewScale: {x: 0.32690176, y: 0.32690176, z: 1}
+  viewPosition: {x: 1104, y: 145, z: 0}
+  viewScale: {x: 0.49717674, y: 0.49717674, z: 1}
   references:
     version: 2
     RefIds:
@@ -90,7 +95,7 @@ MonoBehaviour:
           keys: []
         description: 
         drawGizmos: 0
-        randomRange: 1.5
+        randomRange: 2
     - rid: 7975271815042826324
       type: {class: PatrolPathKey, ns: , asm: Assembly-CSharp}
       data:
@@ -205,7 +210,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 88e3b9fadbdd6d042ba5e71c76666fa2
-        position: {x: -885, y: 450}
+        position: {x: -1500, y: 450}
         blackboard:
           keys: []
         description: 
@@ -213,12 +218,17 @@ MonoBehaviour:
         children:
         - rid: 7975271839587631171
         - rid: 7975271839587631172
+        - rid: 7975271861161820226
+        - rid: 7975271861161820160
+        - rid: 7975271861161820161
+        - rid: 7975271861161820227
+        - rid: 7975271861161820228
     - rid: 7975271839587631171
       type: {class: PlayerDetected, ns: , asm: Assembly-CSharp}
       data:
         started: 0
         guid: 0850f4851061fa1488a13c5347662d46
-        position: {x: -1215, y: 900}
+        position: {x: -2145, y: 900}
         blackboard:
           keys: []
         description: 
@@ -229,10 +239,75 @@ MonoBehaviour:
       data:
         started: 0
         guid: 51bb9f10b251c854ba3d761e412a4354
-        position: {x: -960, y: 900}
+        position: {x: -1950, y: 900}
         blackboard:
           keys: []
         description: 
         drawGizmos: 0
         persecutionRange: 10
-        reachingRange: 1.1
+        reachingRange: 1.5
+    - rid: 7975271861161820160
+      type: {class: Wait, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: dd4e8205c1588ca4ba543c3ec0bbd3a4
+        position: {x: -1500, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        duration:
+          reference:
+            rid: -2
+          defaultValue: 0.3
+    - rid: 7975271861161820161
+      type: {class: MoveToPlayer, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 4d44f8aa483fada4dbf09796db7c581b
+        position: {x: -1290, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        persecutionRange: 2
+        reachingRange: 1
+    - rid: 7975271861161820226
+      type: {class: StopMovement, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 0cabe8b8e515b53438902645922b7c5a
+        position: {x: -1740, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+    - rid: 7975271861161820227
+      type: {class: Attack, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 2c0c2659394bf4a42ae19bf78e5cd90f
+        position: {x: -1095, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 1
+        attackRange: 1
+        collisionMask:
+          serializedVersion: 2
+          m_Bits: 1
+        attackDamage: 5
+    - rid: 7975271861161820228
+      type: {class: Wait, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 5445c50041c2e07499d8809be1de7c8b
+        position: {x: -900, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        duration:
+          reference:
+            rid: -2
+          defaultValue: 3

@@ -66,7 +66,7 @@ public class ShootController : MonoBehaviour
         {
             // Verify if object can be damageable
             IDamageable _damageable = _col.GetComponent<IDamageable>();
-            if (_damageable != null)
+            if (_damageable != null && _col.gameObject != gameObject)
                 _damageable.TakeDamage(weaponData.damage); // Apply damage
 
         }

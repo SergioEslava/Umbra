@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2692975714513022062}
   - component: {fileID: 8083726486453626646}
   - component: {fileID: 8653056485418789108}
+  - component: {fileID: 236498217441993191}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -276,7 +277,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1952ee32b5e8a48b83fa0a7a80b8c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: b5f37ea5138c1fe4f981f53e784117b3, type: 2}
+  bulletHole: {fileID: 0}
   aimPoint: {fileID: 4594189509902603133}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!114 &2692975714513022062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,3 +325,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: 7ae9b6f57899c474ab732e9207ddfcf4, type: 2}
+--- !u!114 &236498217441993191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3840546727682194403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5424998d4005a44881e4ed1828f280d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPoint: 15
+  OnDie:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDamage:
+    m_PersistentCalls:
+      m_Calls: []

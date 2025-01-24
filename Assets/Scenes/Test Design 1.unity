@@ -2115,7 +2115,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3033469, y: 0.000000024189209, z: -0.00000000770057, w: 0.9528802}
-  m_LocalPosition: {x: -0.07, y: 6.4056463, z: -22.469736}
+  m_LocalPosition: {x: 6.96, y: 6.4056463, z: -14.599735}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3444,114 +3444,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 484676714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &475957992
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475957993}
-  - component: {fileID: 475957996}
-  - component: {fileID: 475957995}
-  - component: {fileID: 475957994}
-  m_Layer: 0
-  m_Name: Pointing Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &475957993
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475957992}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.523, z: 0.5}
-  m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.5}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1014741007}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &475957994
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475957992}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &475957995
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475957992}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7674d6d3a563afd4ead9d74d7d37a07d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &475957996
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475957992}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &484676713
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,174 +5910,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
       propertyPath: blackboardOverrides.Array.data[0].key
-      value: 7975271815042826325
+      value: 7975271861161820231
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[1].key
-      value: 7975271815042826310
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[2].key
-      value: 7975271815042826310
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[3].key
-      value: 7975271815042826310
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[4].key
-      value: 7975271815042826310
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826306]'
+      propertyPath: 'managedReferences[7975271861161820231]'
       value: Assembly-CSharp PatrolPathKey
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826307]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826308]'
-      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826309]'
-      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826310]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826311]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826313]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826314]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826317]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826318]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826320]'
-      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826321]'
-      value: thekiwicoder.behaviourtreeeditor TheKiwiCoder.GameObjectKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826325]'
-      value: Assembly-CSharp PatrolPathKey
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: 'managedReferences[7975271815042826326]'
+      propertyPath: 'managedReferences[7975271861161820232]'
       value: Assembly-CSharp PatrolPathKey
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
       propertyPath: blackboardOverrides.Array.data[0].value
-      value: 7975271815042826326
+      value: 7975271861161820232
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[1].value
-      value: 7975271815042826311
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[2].value
-      value: 7975271815042826311
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[3].value
-      value: 7975271815042826311
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: blackboardOverrides.Array.data[4].value
-      value: 7975271815042826311
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826306].name
-      value: patrolPath
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826307].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826308].name
-      value: player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826309].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826310].name
-      value: patrolPath
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826311].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826313].name
+      propertyPath: managedReferences[7975271861161820231].name
       value: path
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826314].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826317].name
-      value: fdgd
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826318].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826320].name
-      value: patrolPath
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826321].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826325].name
-      value: path
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826326].name
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826308].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826309].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826320].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826321].value
-      value: 
-      objectReference: {fileID: 863404383}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826325].value
+      propertyPath: managedReferences[7975271861161820232].name
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
@@ -6193,63 +5937,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 863404385}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826306].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      propertyPath: managedReferences[7975271861161820231].value
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826307].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
+      propertyPath: managedReferences[7975271861161820232].value
+      value: 
+      objectReference: {fileID: 863404385}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826308].typeName
-      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826309].typeName
-      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826310].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826311].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826313].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826314].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826317].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826318].typeName
-      value: PatrolPathKey, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826320].typeName
-      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826321].typeName
-      value: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      objectReference: {fileID: 0}
-    - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826325].typeName
+      propertyPath: managedReferences[7975271861161820231].typeName
       value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 4242720319818480000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      propertyPath: managedReferences[7975271815042826326].typeName
+      propertyPath: managedReferences[7975271861161820232].typeName
       value: PatrolPath, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
       objectReference: {fileID: 0}
     - target: {fileID: 6514140344779589106, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
@@ -6258,17 +5958,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 1623845400154422399, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 475957993}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
---- !u!4 &1014741007 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1623845400154422399, guid: d17c029a6124a6c44b1323ea35345a8f, type: 3}
-  m_PrefabInstance: {fileID: 1014741006}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1017249234
 Mesh:
   m_ObjectHideFlags: 0
@@ -12413,7 +12105,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 415492049440612626, guid: 1df2355a1170caf4e8e7dcf55716abf3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: 6.96
       objectReference: {fileID: 0}
     - target: {fileID: 415492049440612626, guid: 1df2355a1170caf4e8e7dcf55716abf3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12421,7 +12113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 415492049440612626, guid: 1df2355a1170caf4e8e7dcf55716abf3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.469736
+      value: -14.599735
       objectReference: {fileID: 0}
     - target: {fileID: 415492049440612626, guid: 1df2355a1170caf4e8e7dcf55716abf3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12476,17 +12168,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4420061145568689837, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
-      propertyPath: weaponData
-      value: 
-      objectReference: {fileID: 11400000, guid: b5f37ea5138c1fe4f981f53e784117b3, type: 2}
-    - target: {fileID: 4420061145568689837, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
-      propertyPath: collisionMask.m_Bits
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07
+      value: 6.96
       objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalPosition.y
@@ -12494,7 +12178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.84
+      value: -6.97
       objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalRotation.w
