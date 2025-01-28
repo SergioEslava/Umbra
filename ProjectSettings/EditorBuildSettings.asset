@@ -6,8 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Test Design 1.unity
-    guid: 8a8b1cb421fc38446ba9d3ac8638aed1
+    path: Assets/Scenes/Prototype 1/Prototype1_Entrance.unity
+    guid: ea5ee88265aae27439e49d9145bbdd4f
+  - enabled: 1
+    path: Assets/Scenes/Prototype 1/Prototype1_Hall.unity
+    guid: c9e8068cf8153bb43810317dd522dcd8
+  - enabled: 1
+    path: Assets/Scenes/Prototype 1/Prototype1_Canteen.unity
+    guid: 72f657f6f6b7d024b8b2abe2a5da4b3a
+  - enabled: 1
+    path: Assets/Scenes/Prototype 1/Prototype1_Control.unity
+    guid: d4866796180d703449992c45d965038e
+  - enabled: 1
+    path: Assets/Scenes/Prototype 1/Prototype1_Corridor1.unity
+    guid: b55ae63bae32b694d9a29533d3b9e575
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

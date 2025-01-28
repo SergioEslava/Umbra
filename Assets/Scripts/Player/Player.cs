@@ -1,10 +1,19 @@
 using UnityEngine;
 
+[RequireComponent (typeof(Health))]
 public class Player : MonoBehaviour
 {
     [SerializeField] Inventory inventory;
 
+    private Health health;
+
     private static Player _instance;
+
+    private void Awake()
+    {
+        health = GetComponent<Health>();
+        health.OnDie.AddListener(ResetScene);
+    }
 
     public static Player Instance
     {
@@ -21,6 +30,11 @@ public class Player : MonoBehaviour
             Debug.LogError("No Player instance found in the scene.");
             return null;
         }
+    }
+
+    private void ResetScene()
+    {
+        GameManager.Instance.ResetScene();
     }
 
     public Inventory Inventory { get => inventory; set => inventory = value; }
