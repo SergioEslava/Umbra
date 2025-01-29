@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5515957717579126371}
   - component: {fileID: 3706887756348383243}
   - component: {fileID: 7761250408535720187}
+  - component: {fileID: 5127261074962743711}
   m_Layer: 0
   m_Name: Gameplay Camera
   m_TagString: Untagged
@@ -228,3 +229,17 @@ MonoBehaviour:
         DecelTime: 0
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &5127261074962743711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541647185789052823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947365b2f49aab14dbd8caa99f7890ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgDieColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
+  bgHalfHPColor: {r: 0.33962262, g: 0.08810965, b: 0.08810965, a: 1}

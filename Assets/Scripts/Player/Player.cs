@@ -38,4 +38,5 @@ public class Player : MonoBehaviour
     }
 
     public Inventory Inventory { get => inventory; set => inventory = value; }
+    public Health Health { get => health; set => health = value; }
 }

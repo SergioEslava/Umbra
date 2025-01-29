@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5515957717579126371}
   - component: {fileID: 3706887756348383243}
   - component: {fileID: 7761250408535720187}
+  - component: {fileID: 3598825850318255429}
   m_Layer: 0
   m_Name: Gameplay Camera
   m_TagString: Untagged
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2541647185789052823}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30334684, y: 0.000000022759174, z: -0.0000000032085221, w: 0.95288026}
+  m_LocalRotation: {x: 0.30334297, y: 0, z: 0, w: 0.95288146}
   m_LocalPosition: {x: 0, y: 6.4056463, z: -7.6297355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.317, y: 0, z: 0}
 --- !u!114 &4888119216396516917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,3 +229,17 @@ MonoBehaviour:
         DecelTime: 0
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &3598825850318255429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2541647185789052823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947365b2f49aab14dbd8caa99f7890ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgDieColor: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+  bgHalfHPColor: {r: 0.4056604, g: 0.07845318, b: 0.07845318, a: 1}
