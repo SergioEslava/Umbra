@@ -2,7 +2,7 @@ using Unity.Cinemachine;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(ShootController))]
+[RequireComponent(typeof(FiringController))]
 public class CharacterRotationController : MonoBehaviour
 {
     [Header("Rotation")]
@@ -10,7 +10,7 @@ public class CharacterRotationController : MonoBehaviour
     [SerializeField][Range(0f, 10f)] float aimingRotationSpeed;
 
     private MovementController m_movementController;
-    private ShootController m_shootController;
+    private FiringController m_shootController;
 
     Quaternion m_targetRotation = Quaternion.identity;
     Vector3 m_rotationDirection = Vector3.zero;
@@ -19,7 +19,7 @@ public class CharacterRotationController : MonoBehaviour
     private void Start()
     {
         m_movementController = GetComponent<MovementController>();
-        m_shootController = GetComponent<ShootController>();
+        m_shootController = GetComponent<FiringController>();
         m_inputAxisController = FindAnyObjectByType<CinemachineInputAxisController>();
     }
 

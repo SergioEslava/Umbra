@@ -24,6 +24,7 @@ public class Health : MonoBehaviour, IDamageable
 
         OnDamage?.Invoke(healthPoint);
         Debug.Log($"HEALTH: {gameObject.name} takes {_damage} damage. Remaining health points: {healthPoint}");
+        if (m_animator != null) m_animator.SetTrigger("Damage");
 
         if (healthPoint < 0)
         {

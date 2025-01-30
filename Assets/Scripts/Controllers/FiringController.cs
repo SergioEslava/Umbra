@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class ShootController : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class FiringController : MonoBehaviour
 {
     [Header("Weapon Data")]
     [SerializeField] WeaponData weaponData;
@@ -11,13 +12,19 @@ public class ShootController : MonoBehaviour
     [SerializeField] Transform aimPoint;
     [SerializeField] LayerMask collisionMask;
 
+    [Header("Effects")]
+    [SerializeField] AudioClip gunshotSFX;
+    [SerializeField] GameObject shotParticlesFX;
+
     InputAction m_aimAction;
     InputAction m_attackAction;
 
+    private AudioSource m_audioSource;
     private Camera m_camera;
     private bool m_isAiming;
     private bool m_isFiring;
     private Vector3 m_targetPoint;
+    private Vector3 m_targetPointNormal;
     private Vector3 m_targetDirection;
     private float m_shootTimer = 0f;
 
@@ -28,6 +35,8 @@ public class ShootController : MonoBehaviour
     {
         m_aimAction = InputSystem.actions.FindAction("Aim");
         m_attackAction = InputSystem.actions.FindAction("Attack");
+
+        m_audioSource = GetComponent<AudioSource>();
 
         m_camera = Camera.main;
     }
@@ -71,7 +80,8 @@ public class ShootController : MonoBehaviour
 
         }
 
-        Debug.Log("FIRING");
+        m_audioSource.PlayOneShot(gunshotSFX);
+        GameObject _shotParticleFX = Instantiate<GameObject>(shotParticlesFX, m_targetPoint, Quaternion.LookRotation(m_targetPointNormal));
     }
 
     private void aim()
@@ -83,6 +93,7 @@ public class ShootController : MonoBehaviour
         {
            
             m_targetPoint = _hit.point;
+            m_targetPointNormal = _hit.normal;
 
             m_targetDirection = (_hit.point - transform.position).normalized;
 
