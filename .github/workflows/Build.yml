@@ -37,7 +37,7 @@ jobs:
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
       - if: github.ref == 'refs/heads/develop'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
