@@ -25,4 +25,5 @@ MonoBehaviour:
     activeTabs:
     - {fileID: 11400000, guid: 064f84e85d972054bb6d79473150cc62, type: 2}
     - {fileID: 11400000, guid: aba010a0242868044a129cdcfe7df8ff, type: 2}
-    activeTabIndex: 1
+    - {fileID: 11400000, guid: cadcfcd9be313cb428c364f92d53c6df, type: 2}
+    activeTabIndex: 2
