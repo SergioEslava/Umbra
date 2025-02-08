@@ -8,6 +8,7 @@ public class CharacterRotationController : MonoBehaviour
     [Header("Rotation")]
     [SerializeField][Range(0f, 3f)] float rotationSpeed;
     [SerializeField][Range(0f, 10f)] float aimingRotationSpeed;
+    [SerializeField] GameObject playerBody;
 
     private MovementController m_movementController;
     private FiringController m_shootController;
@@ -50,6 +51,6 @@ public class CharacterRotationController : MonoBehaviour
 
         float _finalRotationSpeed = (m_shootController.IsAiming) ? aimingRotationSpeed : rotationSpeed;
 
-        transform.rotation = Quaternion.Slerp(transform.rotation, m_targetRotation, _finalRotationSpeed * Time.deltaTime);
+        playerBody.transform.rotation = Quaternion.Slerp(playerBody.transform.rotation, m_targetRotation, _finalRotationSpeed * Time.deltaTime);
     }
 }
