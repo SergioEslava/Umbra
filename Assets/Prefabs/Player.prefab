@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3356860804397776712}
   - component: {fileID: 1100890871554299140}
   - component: {fileID: 3916691216626642324}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,9 @@ GameObject:
   - component: {fileID: 8653056485418789108}
   - component: {fileID: 236498217441993191}
   - component: {fileID: 124655668370754676}
-  m_Layer: 0
+  - component: {fileID: 1263652063252451309}
+  - component: {fileID: 6634337634733567198}
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -448,3 +450,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1263652063252451309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3840546727682194403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_OverrideArea: 0
+  m_Area: 0
+  m_OverrideGenerateLinks: 0
+  m_GenerateLinks: 0
+  m_IgnoreFromBuild: 1
+  m_ApplyToChildren: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &6634337634733567198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3840546727682194403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a9dacfd142681b4ba973267b067382c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  launchablePrefab: {fileID: 4530536971137576700, guid: b8875a500b4a5444db936ae43557cf52, type: 3}
+  launchCooldown: 15
+  launchForce: 9.65

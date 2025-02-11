@@ -9287,26 +9287,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
   m_PrefabInstance: {fileID: 8765458262188424106}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1621061859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1431625652}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SerializedVersion: 0
-  m_OverrideArea: 0
-  m_Area: 0
-  m_OverrideGenerateLinks: 0
-  m_GenerateLinks: 0
-  m_IgnoreFromBuild: 1
-  m_ApplyToChildren: 1
-  m_AffectedAgents: ffffffff
 --- !u!43 &1625452721
 Mesh:
   m_ObjectHideFlags: 0
@@ -12336,13 +12316,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6634337634733567198, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
+      propertyPath: launchForce
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3840546727682194403, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1621061859}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
 --- !u!1001 &8937179477111700149
 PrefabInstance:
