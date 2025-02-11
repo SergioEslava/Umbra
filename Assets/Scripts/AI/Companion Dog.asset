@@ -23,11 +23,15 @@ MonoBehaviour:
   - rid: 1615224466812960867
   - rid: 1615224466812960875
   - rid: 1615224466812960878
+  - rid: 1615224622085046349
+  - rid: 1615224622085046350
+  - rid: 1615224622085046361
   blackboard:
     keys:
     - rid: 1615224466812960769
-  viewPosition: {x: 604, y: 230, z: 0}
-  viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
+    - rid: 1615224622085046346
+  viewPosition: {x: 1120, y: 410, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
   references:
     version: 2
     RefIds:
@@ -38,7 +42,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: ac240a09-a6a3-40bd-a952-423dcb2292bd
-        position: {x: 0, y: 0}
+        position: {x: -225, y: 0}
         blackboard:
           keys: []
         description: 
@@ -57,12 +61,13 @@ MonoBehaviour:
       data:
         started: 0
         guid: b7d0038f3e19cc6489c2b866118798fb
-        position: {x: -15, y: 225}
+        position: {x: -225, y: 225}
         blackboard:
           keys: []
         description: 
         drawGizmos: 0
         children:
+        - rid: 1615224622085046349
         - rid: 1615224466812960858
         - rid: 1615224466812960875
         - rid: 1615224466812960878
@@ -138,3 +143,44 @@ MonoBehaviour:
           reference:
             rid: -2
           defaultValue: 1
+    - rid: 1615224622085046346
+      type: {class: CompanionDogSharedMemory, ns: , asm: Assembly-CSharp}
+      data:
+        name: shared memory
+        typeName: CompanionDogSM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        value: {fileID: 11400000, guid: f8438e9b37cf29b4b918fc5a99c4b7e5, type: 2}
+    - rid: 1615224622085046349
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 1341ed5005c1848439d45e333c7508d7
+        position: {x: -900, y: 450}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 1615224622085046350
+        - rid: 1615224622085046361
+    - rid: 1615224622085046350
+      type: {class: IsBallLaunched, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: a97f836e462a8fc479b7f7854a1219e7
+        position: {x: -1035, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        invert: 0
+    - rid: 1615224622085046361
+      type: {class: MoveToBall, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: fd7140538b28fb84791dc53de8526a46
+        position: {x: -855, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0

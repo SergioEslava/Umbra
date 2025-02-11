@@ -484,4 +484,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchablePrefab: {fileID: 4530536971137576700, guid: b8875a500b4a5444db936ae43557cf52, type: 3}
   launchCooldown: 15
-  launchForce: 9.65
+  launchForce: 20
+  companionDogSharedMemory: {fileID: 11400000, guid: f8438e9b37cf29b4b918fc5a99c4b7e5, type: 2}

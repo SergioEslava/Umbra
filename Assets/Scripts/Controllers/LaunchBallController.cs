@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,9 @@ public class LaunchBallController : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float launchCooldown = 15f;
     [SerializeField] [Range(5.0f, 20.0f)] private float launchForce = 60.0f;
+
+    [Header("Data")]
+    [SerializeField] private CompanionDogSM companionDogSharedMemory;
 
     private FiringController m_firingController;
 
@@ -53,6 +57,7 @@ public class LaunchBallController : MonoBehaviour
         if(m_launchedObject == null)
         {
             m_launchedObject = GameObject.Instantiate(launchablePrefab, transform.position, Quaternion.identity);
+            companionDogSharedMemory.BallObject.gameObject = m_launchedObject;
         }
 
         // Always resetting the launchable position
@@ -66,9 +71,23 @@ public class LaunchBallController : MonoBehaviour
             return;
         }
 
+        /*
+        TODO: The responnsability of refreshing his state is all in the launchable object.
+        The player could be launching a ball or a grenade, we must use an interface ILaunchable 
+        to make this
+        */
+        StartCoroutine(setLaunchableDestination());
 
         _launchedRg.linearVelocity = Vector3.zero;
         _launchedRg.angularVelocity = Vector3.zero;
         _launchedRg.AddForce(m_firingController.TargetDirection * launchForce, ForceMode.Impulse);
+    }
+
+    private IEnumerator setLaunchableDestination()
+    {
+        yield return new WaitForSeconds(5f);
+        // We refresh the status of the launchable object in shared memory.
+        companionDogSharedMemory.BallObject.isLaunched = true;
+        companionDogSharedMemory.BallObject.destination = companionDogSharedMemory.BallObject.gameObject.transform.position;
     }
 }
