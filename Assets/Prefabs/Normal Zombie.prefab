@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5835035452414285627
 Transform:
   m_ObjectHideFlags: 0
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 7295700510995694351}
   - component: {fileID: 8915202901228014420}
   - component: {fileID: 8623739932043277838}
+  - component: {fileID: 212933953010198869}
   m_Layer: 0
   m_Name: Normal Zombie
   m_TagString: Untagged
@@ -292,6 +293,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 3026110621132800360}
+--- !u!114 &212933953010198869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514140344779589106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361db8c5b86aa0f42a1ee9c8446d3249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3627803953592162527
 PrefabInstance:
   m_ObjectHideFlags: 0

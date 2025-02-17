@@ -34,18 +34,104 @@ MonoBehaviour:
   - rid: 7975271861161820226
   - rid: 7975271861161820227
   - rid: 7975271861161820228
+  - rid: 457517077290025029
+  - rid: 457517077290025031
+  - rid: 457517077290025032
+  - rid: 457517077290025033
+  - rid: 457517077290025034
+  - rid: 457517077290025035
+  - rid: 457517077290025036
   blackboard:
     keys:
     - rid: 7975271815042826324
     - rid: 7975271815042826335
     - rid: 7975271815042826340
-  viewPosition: {x: 1104, y: 145, z: 0}
-  viewScale: {x: 0.49717674, y: 0.49717674, z: 1}
+  viewPosition: {x: 956, y: 232, z: 0}
+  viewScale: {x: 0.32690176, y: 0.32690176, z: 1}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 457517077290025029
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 1410f8ef84467c04c89d5ffe7ddfafeb
+        position: {x: 300, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 457517077290025035
+        - rid: 7975271815042826333
+    - rid: 457517077290025031
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 5c54dce132bfe9546b1feb90776366d2
+        position: {x: -2445, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 5
+    - rid: 457517077290025032
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 3ac222af03ed51143b11e9accbe17c2a
+        position: {x: -1320, y: 900}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 1
+    - rid: 457517077290025033
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 4d93c58ad7401da4992420fc51a97530
+        position: {x: -240, y: 1125}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 0
+    - rid: 457517077290025034
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 2009f11eb93ea5644800a5db83cd1e3d
+        position: {x: -900, y: 1125}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 4
+    - rid: 457517077290025035
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: a89159ad2df304a48b485ea5599db106
+        position: {x: 240, y: 1125}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 0
+    - rid: 457517077290025036
+      type: {class: PlayAnimationZombie, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 5366077fcbbda844e8f9a08b76929a7b
+        position: {x: 660, y: 1125}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        animation: 4
     - rid: 7975271657448931328
       type: {class: RootNode, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
       data:
@@ -63,12 +149,13 @@ MonoBehaviour:
       data:
         started: 0
         guid: 2514028422ab1a34da37fa8faf4f9ae0
-        position: {x: 270, y: 900}
+        position: {x: 780, y: 900}
         blackboard:
           keys: []
         description: 
         drawGizmos: 0
         children:
+        - rid: 457517077290025036
         - rid: 7975271657448931555
         - rid: 7975271657448931552
     - rid: 7975271657448931552
@@ -76,7 +163,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: d40184525353fc14ea81dbaffe7cb8ea
-        position: {x: 405, y: 1125}
+        position: {x: 1065, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -90,7 +177,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: fce5827173001824badc632248c766da
-        position: {x: 150, y: 1125}
+        position: {x: 870, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -115,14 +202,14 @@ MonoBehaviour:
         drawGizmos: 0
         children:
         - rid: 7975271815042826336
-        - rid: 7975271815042826333
+        - rid: 457517077290025029
         - rid: 7975271657448931543
     - rid: 7975271815042826333
       type: {class: Wait, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
       data:
         started: 0
         guid: 22d13f97ce1e3044aad1d9349caa20fa
-        position: {x: -60, y: 900}
+        position: {x: 450, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -148,15 +235,17 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         children:
+        - rid: 457517077290025034
         - rid: 7975271815042826337
         - rid: 7975271815042826338
+        - rid: 457517077290025033
         - rid: 7975271815042826339
     - rid: 7975271815042826337
       type: {class: MoveToTargetPath, ns: , asm: Assembly-CSharp}
       data:
         started: 0
         guid: f252f359a2c6158478b00a7ee71898e3
-        position: {x: -720, y: 1125}
+        position: {x: -690, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -176,7 +265,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: a90a7f579a2e07b449c3308b5963ce9c
-        position: {x: -255, y: 1125}
+        position: {x: -15, y: 1125}
         blackboard:
           keys: []
         description: 
@@ -210,25 +299,27 @@ MonoBehaviour:
       data:
         started: 0
         guid: 88e3b9fadbdd6d042ba5e71c76666fa2
-        position: {x: -1500, y: 450}
+        position: {x: -1980, y: 450}
         blackboard:
           keys: []
         description: 
         drawGizmos: 0
         children:
         - rid: 7975271839587631171
+        - rid: 457517077290025031
         - rid: 7975271839587631172
         - rid: 7975271861161820226
         - rid: 7975271861161820160
         - rid: 7975271861161820161
         - rid: 7975271861161820227
+        - rid: 457517077290025032
         - rid: 7975271861161820228
     - rid: 7975271839587631171
       type: {class: PlayerDetected, ns: , asm: Assembly-CSharp}
       data:
         started: 0
         guid: 0850f4851061fa1488a13c5347662d46
-        position: {x: -2145, y: 900}
+        position: {x: -2625, y: 900}
         blackboard:
           keys: []
         description: 
@@ -239,7 +330,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 51bb9f10b251c854ba3d761e412a4354
-        position: {x: -1950, y: 900}
+        position: {x: -2220, y: 900}
         blackboard:
           keys: []
         description: 
@@ -251,7 +342,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: dd4e8205c1588ca4ba543c3ec0bbd3a4
-        position: {x: -1500, y: 900}
+        position: {x: -1830, y: 900}
         blackboard:
           keys: []
         description: 
@@ -259,13 +350,13 @@ MonoBehaviour:
         duration:
           reference:
             rid: -2
-          defaultValue: 0.3
+          defaultValue: 0.15
     - rid: 7975271861161820161
       type: {class: MoveToPlayer, ns: , asm: Assembly-CSharp}
       data:
         started: 0
         guid: 4d44f8aa483fada4dbf09796db7c581b
-        position: {x: -1290, y: 900}
+        position: {x: -1650, y: 900}
         blackboard:
           keys: []
         description: 
@@ -277,7 +368,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 0cabe8b8e515b53438902645922b7c5a
-        position: {x: -1740, y: 900}
+        position: {x: -2010, y: 900}
         blackboard:
           keys: []
         description: 
@@ -287,7 +378,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 2c0c2659394bf4a42ae19bf78e5cd90f
-        position: {x: -1095, y: 900}
+        position: {x: -1485, y: 900}
         blackboard:
           keys: []
         description: 
@@ -302,7 +393,7 @@ MonoBehaviour:
       data:
         started: 0
         guid: 5445c50041c2e07499d8809be1de7c8b
-        position: {x: -900, y: 900}
+        position: {x: -1110, y: 900}
         blackboard:
           keys: []
         description: 
