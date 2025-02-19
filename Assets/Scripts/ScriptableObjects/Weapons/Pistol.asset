@@ -19,5 +19,7 @@ MonoBehaviour:
   range: 10
   impactRadius: 0.2
   weaponPrefab: {fileID: 0}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 8ae95bd14dc6f324ebaaaf550147ad56, type: 3}
+  idleAnimation: {fileID: 1610768100517131643, guid: 6812a967c33e52946b6c8ed2923a9dae, type: 3}
+  fireAnimation: {fileID: 2348074996579596787, guid: 6812a967c33e52946b6c8ed2923a9dae, type: 3}
   description: Small caliber pistol.

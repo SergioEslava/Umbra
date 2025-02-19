@@ -211,8 +211,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aa8641d410d16142925f9323f4dc5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.06
-  sprintSpeed: 0.15
+  movementSpeed: 0.023
+  sprintSpeed: 0.094
 --- !u!114 &4420061145568689837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,6 @@ MonoBehaviour:
   collisionMask:
     serializedVersion: 2
     m_Bits: 1
-  gunshotSFX: {fileID: 8300000, guid: 8ae95bd14dc6f324ebaaaf550147ad56, type: 3}
   shotParticlesFX: {fileID: 7483963731060029608, guid: 091068297eeaace41a331c850d2b0030, type: 3}
 --- !u!114 &2692975714513022062
 MonoBehaviour:
@@ -245,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4680885e83743804195c7eb65c9c8faf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 2.54
+  rotationSpeed: 3
   aimingRotationSpeed: 7
 --- !u!114 &8083726486453626646
 MonoBehaviour:

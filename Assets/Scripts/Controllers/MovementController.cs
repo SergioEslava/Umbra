@@ -66,9 +66,9 @@ public class MovementController : MonoBehaviour
 
         // Setting the animations values
         if (_movement.magnitude < 0.1f)
-            m_animationController.PlayAnimation(PlayerAnimation.Idle.ToAnimationName(), 1f);
+            m_animationController.PlayAnimationInLayer(PlayerAnimation.Idle.ToAnimationName(), 0);
         else
-            m_animationController.PlayAnimationImmediate(m_sprintInput ? PlayerAnimation.Run.ToAnimationName() : PlayerAnimation.Walk.ToAnimationName());
+            m_animationController.PlayAnimationInLayer(m_sprintInput ? PlayerAnimation.Run.ToAnimationName() : PlayerAnimation.Walk.ToAnimationName(), 0);
 
         // Moving Character
         m_characterController.Move(m_moveDirection * _movementSpeed);  

@@ -14,7 +14,6 @@ public class FiringController : MonoBehaviour
     [SerializeField] LayerMask collisionMask;
 
     [Header("Effects")]
-    [SerializeField] AudioClip gunshotSFX;
     [SerializeField] GameObject shotParticlesFX;
 
 
@@ -43,6 +42,8 @@ public class FiringController : MonoBehaviour
         m_animationController = GetComponent<AnimationController>();
 
         m_camera = Camera.main;
+
+        m_animationController.PlayAnimationInLayer(weaponData.idleAnimation.name, 1);
     }
 
     private void Update()
@@ -84,7 +85,8 @@ public class FiringController : MonoBehaviour
 
         }
 
-        m_audioSource.PlayOneShot(gunshotSFX);
+        m_animationController.PlayAnimationInLayer(weaponData.fireAnimation.name, 1);
+        m_audioSource.PlayOneShot(weaponData.attackSound);
         GameObject _shotParticleFX = Instantiate<GameObject>(shotParticlesFX, m_targetPoint, Quaternion.LookRotation(m_targetPointNormal));
     }
 
