@@ -17,6 +17,10 @@ public class WeaponData : ScriptableObject
     public GameObject weaponPrefab; // Model or object to spawn
     public AudioClip attackSound; // Sound when the weapon is used
 
+    [Header("Animation")]
+    public AnimationClip idleAnimation;
+    public AnimationClip fireAnimation;
+
     [TextArea]
     public string description; // Optional description of the weapon
 }

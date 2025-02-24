@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.ProBuilder.MeshOperations;
 
 [RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(AnimationController))]
 public class MovementController : MonoBehaviour
 {
     [Header("Movement")]
@@ -9,6 +11,7 @@ public class MovementController : MonoBehaviour
     [SerializeField][Range(0.01f, 0.2f)] float sprintSpeed;
     
     private CharacterController m_characterController;
+    private AnimationController m_animationController;
 
     private InputAction m_moveAction;
     private InputAction m_sprintAction;
@@ -29,6 +32,7 @@ public class MovementController : MonoBehaviour
         m_camera = Camera.main;
 
         m_characterController = GetComponent<CharacterController>();
+        m_animationController = GetComponent<AnimationController>();
     }
 
     void Update()
@@ -59,6 +63,12 @@ public class MovementController : MonoBehaviour
         m_moveDirection = _cameraForward * _movement.z + _cameraRight * _movement.x;
 
         float _movementSpeed = m_sprintInput ? sprintSpeed : movementSpeed;
+
+        // Setting the animations values
+        if (_movement.magnitude < 0.1f)
+            m_animationController.PlayAnimationInLayer(PlayerAnimation.Idle.ToAnimationName(), 0);
+        else
+            m_animationController.PlayAnimationInLayer(m_sprintInput ? PlayerAnimation.Run.ToAnimationName() : PlayerAnimation.Walk.ToAnimationName(), 0);
 
         // Moving Character
         m_characterController.Move(m_moveDirection * _movementSpeed);  

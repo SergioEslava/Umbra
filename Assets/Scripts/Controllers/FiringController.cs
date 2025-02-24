@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(AudioSource))]
+[RequireComponent (typeof(AnimationController))]
 public class FiringController : MonoBehaviour
 {
     [Header("Weapon Data")]
@@ -13,13 +14,14 @@ public class FiringController : MonoBehaviour
     [SerializeField] LayerMask collisionMask;
 
     [Header("Effects")]
-    [SerializeField] AudioClip gunshotSFX;
     [SerializeField] GameObject shotParticlesFX;
+
 
     InputAction m_aimAction;
     InputAction m_attackAction;
 
     private AudioSource m_audioSource;
+    private AnimationController m_animationController;
     private Camera m_camera;
     private bool m_isAiming;
     private bool m_isFiring;
@@ -37,8 +39,11 @@ public class FiringController : MonoBehaviour
         m_attackAction = InputSystem.actions.FindAction("Attack");
 
         m_audioSource = GetComponent<AudioSource>();
+        m_animationController = GetComponent<AnimationController>();
 
         m_camera = Camera.main;
+
+        m_animationController.PlayAnimationInLayer(weaponData.idleAnimation.name, 1);
     }
 
     private void Update()
@@ -80,7 +85,8 @@ public class FiringController : MonoBehaviour
 
         }
 
-        m_audioSource.PlayOneShot(gunshotSFX);
+        m_animationController.PlayAnimationInLayer(weaponData.fireAnimation.name, 1);
+        m_audioSource.PlayOneShot(weaponData.attackSound);
         GameObject _shotParticleFX = Instantiate<GameObject>(shotParticlesFX, m_targetPoint, Quaternion.LookRotation(m_targetPointNormal));
     }
 
