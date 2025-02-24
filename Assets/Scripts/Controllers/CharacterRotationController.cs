@@ -38,6 +38,7 @@ public class CharacterRotationController : MonoBehaviour
         else if (m_movementController.MoveDirection.magnitude > 0.1f)
         {
             m_rotationDirection = m_movementController.MoveDirection;
+            m_rotationDirection.y = 0f;
         }
         else
         {

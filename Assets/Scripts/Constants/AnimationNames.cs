@@ -1,6 +1,6 @@
 public enum PlayerAnimation
 {
-    Idle,
+    IdleMelee,
     IdlePistol,
     IdleRifle,
     Walk,

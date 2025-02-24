@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4594189509902603133}
   - component: {fileID: 3356860804397776712}
   - component: {fileID: 1100890871554299140}
-  - component: {fileID: 3916691216626642324}
   m_Layer: 0
   m_Name: Weapon
   m_TagString: Untagged
@@ -32,7 +31,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1539681100296736120}
+  m_Father: {fileID: 5112187020033334749}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3356860804397776712
 MeshFilter:
@@ -225,7 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 3
   aimingRotationSpeed: 7
-  playerBody: {fileID: 6120402564113505867}
+  playerBody: {fileID: 5122979329739608590}
 --- !u!114 &8083726486453626646
 MonoBehaviour:
   m_ObjectHideFlags: 0
