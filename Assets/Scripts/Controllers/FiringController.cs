@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(AudioSource))]
@@ -19,15 +20,18 @@ public class FiringController : MonoBehaviour
 
     InputAction m_aimAction;
     InputAction m_attackAction;
+    InputAction m_lookAction;
 
     private AudioSource m_audioSource;
     private AnimationController m_animationController;
     private Camera m_camera;
     private bool m_isAiming;
     private bool m_isFiring;
+    private Vector2 m_lookInput;
     private Vector3 m_targetPoint;
     private Vector3 m_targetPointNormal;
     private Vector3 m_targetDirection;
+    private Vector3 m_lastTargetDirection = Vector3.zero;
     private float m_shootTimer = 0f;
 
     public bool IsAiming { get => m_isAiming; }
@@ -37,6 +41,7 @@ public class FiringController : MonoBehaviour
     {
         m_aimAction = InputSystem.actions.FindAction("Aim");
         m_attackAction = InputSystem.actions.FindAction("Attack");
+        m_lookAction = InputSystem.actions.FindAction("Look");
 
         m_audioSource = GetComponent<AudioSource>();
         m_animationController = GetComponent<AnimationController>();
@@ -50,6 +55,16 @@ public class FiringController : MonoBehaviour
     {
         m_isAiming = m_aimAction.IsPressed();
         m_isFiring = (m_isAiming) ? m_attackAction.IsPressed() : false;
+
+        var device = m_lookAction.activeControl.device;
+
+        
+        if (device is Gamepad)
+            m_lookInput = (m_isAiming) ? m_lookAction.ReadValue<Vector2>() : m_lastTargetDirection;
+        else if(device is Mouse)
+        {
+            // TODO: Implement priority of Gamepad over Mouse controls.
+        }
     }
 
     private void FixedUpdate()
@@ -92,7 +107,22 @@ public class FiringController : MonoBehaviour
 
     private void aim()
     {
-        Ray _ray = m_camera.ScreenPointToRay(Input.mousePosition);
+        // Transforming movement direction to align with the camera's orientation
+        Vector3 _cameraForward = m_camera.transform.forward; // Forward direction of the camera
+        Vector3 _cameraRight = m_camera.transform.right;     // Right direction of the camera
+
+        // Remove any vertical component to keep movement on the horizontal plane
+        _cameraForward.y = 0f;
+        _cameraRight.y = 0f;
+
+        // Normalize the directions
+        _cameraForward.Normalize();
+        _cameraRight.Normalize();
+
+        m_targetDirection = _cameraForward * m_lookInput.y + _cameraRight * m_lookInput.x;
+        m_lastTargetDirection = m_targetDirection;
+
+        Ray _ray = new Ray(aimPoint.position, m_targetDirection);
         RaycastHit _hit;
 
         if (Physics.Raycast(_ray, out _hit))
@@ -100,8 +130,6 @@ public class FiringController : MonoBehaviour
            
             m_targetPoint = _hit.point;
             m_targetPointNormal = _hit.normal;
-
-            m_targetDirection = (_hit.point - transform.position).normalized;
 
             // Draw a plane around the target point
             DrawDebugPlane(m_targetPoint, _hit.normal, 0.2f);

@@ -193,7 +193,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 25513f4bbd1c4e342885e721f15926c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1328,7 +1328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587241296}
   - component: {fileID: 587241295}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1348,7 @@ BoxCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -1689,7 +1689,7 @@ Transform:
   m_GameObject: {fileID: 735021106}
   serializedVersion: 2
   m_LocalRotation: {x: 0.29983023, y: -0.44373542, z: 0.16046427, w: 0.8291272}
-  m_LocalPosition: {x: 6, y: 7, z: -4}
+  m_LocalPosition: {x: 6, y: 7, z: -4.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2487,7 +2487,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988385939}
   - component: {fileID: 988385938}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2661,7 +2661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021926926}
   - component: {fileID: 1021926925}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2714,7 +2714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044054246}
   - component: {fileID: 1044054245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2963,7 +2963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1256337629}
   - component: {fileID: 1256337628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3030,6 +3030,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4420061145568689837, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
+      propertyPath: aimPoint
+      value: 
+      objectReference: {fileID: 1257974571}
+    - target: {fileID: 4420061145568689837, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
+      propertyPath: collisionMask.m_Bits
+      value: 55
+      objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3040,7 +3048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: 5112187020033334749, guid: 47a839fe5d5221741a0ee8db0686a203, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4217,7 +4225,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: 25513f4bbd1c4e342885e721f15926c5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4505,7 +4513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1447988255}
   - component: {fileID: 1447988254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4558,7 +4566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521698135}
   - component: {fileID: 1521698134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4910,6 +4918,8 @@ GameObject:
   - component: {fileID: 1610955343}
   - component: {fileID: 1610955342}
   - component: {fileID: 1610955341}
+  - component: {fileID: 1610955345}
+  - component: {fileID: 1610955346}
   m_Layer: 0
   m_Name: FollowCamera
   m_TagString: Untagged
@@ -5024,12 +5034,42 @@ Transform:
   m_GameObject: {fileID: 1610955340}
   serializedVersion: 2
   m_LocalRotation: {x: 0.29983023, y: -0.44373542, z: 0.16046427, w: 0.8291272}
-  m_LocalPosition: {x: 6, y: 7, z: -4}
+  m_LocalPosition: {x: 6, y: 7, z: -4.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1610955345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610955340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoiseProfile: {fileID: 11400000, guid: 46965f9cbaf525742a6da4c2172a99cd, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 0.3
+  FrequencyGain: 0.1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &1610955346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610955340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91349ef3ef6040498f86cec562faf12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armLenght: 9
 --- !u!1 &1743587387
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,7 +6411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2017395836}
   - component: {fileID: 2017395835}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Invisible Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
