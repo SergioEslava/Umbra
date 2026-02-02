@@ -1,6 +1,12 @@
 name: Build project
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
   buildForAllSupportedPlatforms:
@@ -30,7 +36,8 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: ${{ matrix.targetPlatform }}
-      - uses: actions/upload-artifact@v3
+      - if: github.ref == 'refs/heads/develop'
+        uses: actions/upload-artifact@v4
         with:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
