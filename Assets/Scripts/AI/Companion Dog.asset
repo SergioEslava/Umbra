@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: Companion Dog
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 1615224466812960768
+  nodes:
+  - rid: 1615224466812960768
+  - rid: 1615224466812960850
+  - rid: 1615224466812960851
+  - rid: 1615224466812960852
+  - rid: 1615224466812960858
+  - rid: 1615224466812960867
+  - rid: 1615224466812960875
+  - rid: 1615224466812960878
+  - rid: 1615224622085046349
+  - rid: 1615224622085046350
+  - rid: 1615224622085046361
+  blackboard:
+    keys:
+    - rid: 1615224466812960769
+    - rid: 1615224622085046346
+  viewPosition: {x: 1120, y: 410, z: 0}
+  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1615224466812960768
+      type: {class: RootNode, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: ac240a09-a6a3-40bd-a952-423dcb2292bd
+        position: {x: -225, y: 0}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 1615224466812960850
+    - rid: 1615224466812960769
+      type: {class: GameObjectKey, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        name: player
+        typeName: UnityEngine.GameObject, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        value: {fileID: 0}
+    - rid: 1615224466812960850
+      type: {class: Selector, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: b7d0038f3e19cc6489c2b866118798fb
+        position: {x: -225, y: 225}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 1615224622085046349
+        - rid: 1615224466812960858
+        - rid: 1615224466812960875
+        - rid: 1615224466812960878
+    - rid: 1615224466812960851
+      type: {class: PlayerIsShooting, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 13cb6054e69b7bb4f9add6aa2f919c55
+        position: {x: -420, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        invert: 0
+    - rid: 1615224466812960852
+      type: {class: MoveAside, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: bb11b6ab7c00bff47a4da3595306cf48
+        position: {x: -15, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+    - rid: 1615224466812960858
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 2ebdca619cda1c9479689599dfb91ebe
+        position: {x: -225, y: 450}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 1615224466812960851
+        - rid: 1615224466812960867
+        - rid: 1615224466812960852
+    - rid: 1615224466812960867
+      type: {class: IsInPlayerLineOfFire, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: 0320ce072ee74a24abd6ab43ef8a259d
+        position: {x: -225, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        invert: 0
+        tolerance: 15
+    - rid: 1615224466812960875
+      type: {class: MoveToRandom, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: d6313ee584ed99d4091bcc8308754d2f
+        position: {x: 375, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        randomRange: 5
+    - rid: 1615224466812960878
+      type: {class: Wait, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: c5c706ac6ebd6ba4085bedaecd122e1c
+        position: {x: 615, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        duration:
+          reference:
+            rid: -2
+          defaultValue: 1
+    - rid: 1615224622085046346
+      type: {class: CompanionDogSharedMemory, ns: , asm: Assembly-CSharp}
+      data:
+        name: shared memory
+        typeName: CompanionDogSM, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        value: {fileID: 11400000, guid: f8438e9b37cf29b4b918fc5a99c4b7e5, type: 2}
+    - rid: 1615224622085046349
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: thekiwicoder.behaviourtreeeditor}
+      data:
+        started: 0
+        guid: 1341ed5005c1848439d45e333c7508d7
+        position: {x: -900, y: 450}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 1615224622085046350
+        - rid: 1615224622085046361
+    - rid: 1615224622085046350
+      type: {class: IsBallLaunched, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: a97f836e462a8fc479b7f7854a1219e7
+        position: {x: -1035, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        invert: 0
+    - rid: 1615224622085046361
+      type: {class: MoveToBall, ns: , asm: Assembly-CSharp}
+      data:
+        started: 0
+        guid: fd7140538b28fb84791dc53de8526a46
+        position: {x: -855, y: 675}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
